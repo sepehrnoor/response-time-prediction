@@ -1,0 +1,12 @@
+.ipynb_checkpoints/
+**/__pycache__/**
+__pycache__/
+**/desktop.ini
+desktop.ini
+*.npy
+*.pkl
+*.torch
+**/*.torch
+data
+.vscode/
+.vscode/**
