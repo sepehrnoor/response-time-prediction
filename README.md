@@ -1,5 +1,4 @@
-# Thesis
-#### By Sepehr Noorzadeh and Shamiran Jaf
+# Applying Knowledge Tracing to Predict ExerciseResponse Time
 
 ## Overview
 This is a machine learning pipeline for knowledge tracing. It supports several public datasets, and one private dataset. It was built with PyTorch, NumPy and Pandas.
