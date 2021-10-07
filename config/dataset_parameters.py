@@ -51,14 +51,16 @@ exercise_id_dict = {
     'ednet': 13525
 }
 
+# Average length of elapsed time - used for normalization
 time_scale_dict = {
     'akribian': 20.,
-    'assistments_2009': 0.,
+    'assistments_2009': 1.,
     'assistments_2012': 110.,
     'junyi_academy': 90.,
     'ednet': 45.
 }
 
+# Encoding of the csv files.
 encodings_dict = {
     'akribian': 'utf-8',
     'assistments_2009': 'cp850',
@@ -67,6 +69,7 @@ encodings_dict = {
     'ednet': 'utf-8',
 }
 
+# Ratio of data to be used for validation
 val_ratio_dict = {
     'akribian': 0.5,
     'assistments_2012': 0.05,
@@ -74,6 +77,7 @@ val_ratio_dict = {
     'ednet': 0.05,
 }
 
+# Whether to shuffle the datasets
 shuffle_dict = {
     'akribian': False,
     'assistments_2012': False,

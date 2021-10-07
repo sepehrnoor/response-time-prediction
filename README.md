@@ -1,7 +1,10 @@
 # Applying Knowledge Tracing to Predict Exercise Response Time
+## By Shamiran Jaf and Sepehr Noorzadeh
 
 ## Overview
-This is a machine learning pipeline for knowledge tracing. It supports several public datasets, and one private dataset. It was built with PyTorch, NumPy and Pandas.
+This repository contains the master's thesis written by Shamiran Jaf and Sepehr Noorzadeh at Akribian AB while studying at the Faculty of Engineering (LTH) at Lund University.
+
+It is a machine learning pipeline for knowledge tracing. It supports several public datasets, and one private dataset. It was built with PyTorch, NumPy and Pandas.
 
 ## Dependencies
 * PyTorch (1.7.1)
@@ -54,7 +57,7 @@ The preprocessed data should now be located at `thesis/data/[DATASET_NAME]/proce
 ### Training
 
 In order to train the model 
-1. Open `thesis/train_evaluate.ipynb`
+1. Open `train_evaluate.ipynb`
 2. Make sure that the `DATASET` parameter is set to the dataset you want to preprocess.
 3. Set the `DATASET` parameter to the name of the dataset you want to use.
 4. Set the `MODEL` parameter to the name of the model you want to train.
@@ -66,10 +69,13 @@ The model will be trained and continually saved to `/thesis/models/checkpoints/[
 ### Run predictions and show results
 If you already have a trained model in `/thesis/models/checkpoints/[MODE + '_' + MODEL + '_' + DATASET].torch` you can set the `SKIP_TRAINING` switch to true in the `train_evaluate.ipynb` notebook to `True` to skip the training and just load the checkpoint before doing prediction and evaluation.
 
+### Add support for a new dataset
+You can edit the file `config/dataset_parameters.py` and add parameters for your own dataset.
+
 ### Folder structure
 `data` contains data separated into dataset > raw/processed > model.
 
-`models` contains model notebooks.
+`models/model.py` contains the models used.
 
 `preprocessing` contains preprocessing notebooks.
 
